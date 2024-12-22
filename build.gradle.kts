@@ -1,17 +1,17 @@
 plugins {
-    kotlin("jvm")
+    alias(libs.plugins.kotlin.jvm)
     application
 }
 
 group = "za.co.skadush.cli"
-version = "1.0-SNAPSHOT"
+version = "1.1-SNAPSHOT"
 
 dependencies {
 
-    implementation("com.github.ajalt.clikt:clikt:5.0.2")
+    implementation(libs.clikt)
 
     // optional support for rendering markdown in help messages
-    implementation("com.github.ajalt.clikt:clikt-markdown:5.0.2")
+    implementation(libs.clikt.markdown)
 }
 
 application {
