@@ -16,4 +16,5 @@ dependencies {
 
 application {
     mainClass.set("za.co.skadush.cli.MainKt")
+    applicationName = "skadush-cli"
 }
